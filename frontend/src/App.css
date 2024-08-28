@@ -1,0 +1,126 @@
+/* General styling for the entire page */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  background-color: #121212; /* Dark background for the entire page */
+  color: #e0e0e0; /* Light text color for contrast */
+  font-family: "Arial", sans-serif;
+}
+
+/* Styling for the main app container */
+.App {
+  background-color: #1e1e1e; /* Dark background for the content area */
+  color: #e0e0e0;
+  padding: 30px 20px; /* Add padding to all sides */
+  max-width: 600px;
+  margin: 0 auto; /* Center align the container */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the project heading (h1) */
+h1 {
+  font-size: 2.5rem; /* Large font size for the main title */
+  color: #00ccff; /* Bright blue for emphasis */
+  text-align: center;
+  margin: 20px 0; /* Space above and below the title */
+  padding: 10px;
+  background-color: #121212; /* Matching background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+/* Styling for secondary headings (h2) */
+h2 {
+  font-size: 1.8rem; /* Slightly smaller than h1 for hierarchy */
+  color: #ffffff; /* White color for contrast */
+  margin-bottom: 15px; /* Space below heading */
+  text-align: center; /* Centered text */
+  border-bottom: 2px solid #00aaff; /* Underline with a matching color */
+  padding-bottom: 10px; /* Padding to create space around the underline */
+}
+
+/* Styling for sections in the app */
+.section {
+  margin-bottom: 30px; /* Increased spacing between sections */
+  padding: 20px; /* Added padding inside the section */
+  background-color: #292929; /* Slightly lighter background for contrast */
+  border-radius: 8px; /* Rounded corners for sections */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+/* Styling for input fields and textarea */
+textarea,
+input {
+  width: 100%;
+  padding: 14px; /* Slightly larger padding for comfort */
+  margin: 10px 0;
+  border: 1px solid #444; /* Darker border for better contrast */
+  border-radius: 6px; /* Slightly more rounded corners */
+  background-color: #333; /* Dark background for input fields */
+  color: #e0e0e0; /* Light text color in input fields */
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: #aaaaaa; /* Light gray color for placeholders */
+  opacity: 1; /* Ensure the color is fully applied */
+  font-style: italic; /* Optional: Italicize to distinguish from input text */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaaaaa;
+  opacity: 1;
+  font-style: italic;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aaaaaa;
+  opacity: 1;
+  font-style: italic;
+}
+
+/* Input focus state */
+textarea:focus,
+input:focus {
+  border-color: #00aaff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.6); /* Soft glow effect */
+}
+
+/* Styling for buttons */
+button {
+  width: 100%;
+  padding: 12px; /* Slightly larger padding for better touch targets */
+  background-color: #00aaff; /* Bright blue background */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1.1rem; /* Larger text for readability */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #0088cc; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Styling for preformatted text */
+pre {
+  background-color: #1e1e1e; /* Dark background for preformatted text */
+  padding: 14px; /* Increased padding for readability */
+  border: 1px solid #444; /* Dark border for contrast */
+  border-radius: 6px; /* Rounded corners */
+  color: #e0e0e0; /* Light text color for preformatted text */
+  font-size: 1rem; /* Consistent font size */
+  white-space: pre-wrap; /* Maintain white space for long content */
+  word-wrap: break-word; /* Wrap long words */
+}
